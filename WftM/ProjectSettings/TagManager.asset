@@ -10,6 +10,7 @@ TagManager:
   - Rock
   - Machine
   - Health
+  - Pond
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - ChopZone
   - Breakable
   - Pickup
-  - 
+  - Pond
   - 
   - 
   - 

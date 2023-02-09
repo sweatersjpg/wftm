@@ -61,6 +61,14 @@ public class PlayerController : MonoBehaviour
 
     bool gameOver = false;
 
+    bool freezeAnim = false;
+    private Pond currentPond;
+
+    //differentiate between fishing action (hold) and chopping action (hit)
+    public enum actionType { none, machine, chop, fish }
+    [SerializeField]
+    public actionType action = actionType.none;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -95,7 +103,8 @@ public class PlayerController : MonoBehaviour
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         Vector2.ClampMagnitude(input, 1);
 
-        if (Time.time - chopStart > chopDuration)
+
+        if (Time.time - chopStart > chopDuration && !freezeAnim)
         {
             if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E))
             {
@@ -136,7 +145,22 @@ public class PlayerController : MonoBehaviour
             item.SendMessage("SetVelocity", transform.position - toolPivot.Find("hitpoint").position);
         }
 
+
+        if (freezeAnim)
+        {
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E))
+            {
+                
+                currentPond.Reel();
+                currentPond = null;
+
+                freezeAnim = false;
+                action = actionType.none;
+
+            }
+        }
         //DoAnimation();
+
     }
 
     private void FixedUpdate()
@@ -173,13 +197,24 @@ public class PlayerController : MonoBehaviour
                         hit.transform.SendMessage("DoHit");
                     }
                 }
+                else if (hit.transform.CompareTag("Pond"))
+                {
+                    
+                    
+                    currentPond = hit.transform.GetComponent<Pond>();
+                    currentPond.Cast();
+
+                }
                 else hit.transform.SendMessage("DoHit");
             }
+
+
 
             hasChopped = true;
         }
     }
 
+    
     bool GetTool()
     {
         toolPivot.localScale = new Vector3(facingRight ? 1 : -1, 1, 1);
@@ -190,6 +225,7 @@ public class PlayerController : MonoBehaviour
         {
             if (hit.transform.CompareTag("Machine"))
             {
+                action = actionType.machine;
                 if (woodCount > rockCount && woodCount >= 5)
                 {
                     toolSprites[0].sprite = resourceItemSprites[0];
@@ -207,11 +243,18 @@ public class PlayerController : MonoBehaviour
                     return false;
                 }
             }
+            else if (hit.transform.CompareTag("Pond"))
+            {
+                toolSprites[0].sprite = hit.transform.GetComponent<Interactable>().tool;
+                toolSprites[1].sprite = hit.transform.GetComponent<Interactable>().tool;
+                action = actionType.fish;
+            }
             else
             {
                 // hit.transform.SendMessage("DoHit");
                 toolSprites[0].sprite = hit.transform.GetComponent<Breakable>().tool;
                 toolSprites[1].sprite = hit.transform.GetComponent<Breakable>().tool;
+                action = actionType.chop;
             }
 
             //Debug.Log(hit.transform.name);
@@ -221,6 +264,7 @@ public class PlayerController : MonoBehaviour
 
         toolSprites[0].sprite = null;
         toolSprites[1].sprite = null;
+        action = actionType.none;
 
         return false;
     }
@@ -269,23 +313,47 @@ public class PlayerController : MonoBehaviour
             sr.flipX = animTic % 4 < 2;
         }
 
+        //animation should be active
         if(Time.time - chopStart < chopDuration)
         {
             toolPivot.localScale = new Vector3(facingRight ? 1 : -1, 1, 1);
 
             sr.flipX = !facingRight;
-            if (Time.time - chopStart < chopDuration/2)
+
+            if (!freezeAnim)
             {
-                sr.sprite = sprites[2];
-                // enable up tool
-                toolSprites[0].enabled = true;
-                toolSprites[1].enabled = false;
-            } else
+                //upwards motion
+                if (Time.time - chopStart < chopDuration / 2)
+                {
+                    sr.sprite = sprites[2];
+                    // enable up tool
+                    toolSprites[0].enabled = true;
+                    toolSprites[1].enabled = false;
+
+                }
+                else //downwards motion
+                {
+                    sr.sprite = sprites[3];
+                    toolSprites[0].enabled = false;
+                    toolSprites[1].enabled = true;
+
+                    if (action == actionType.fish)
+                    {
+                        freezeAnim = true;
+                    }
+                    
+                }
+            }
+            else
             {
+                chopStart = Time.time;
+
                 sr.sprite = sprites[3];
                 toolSprites[0].enabled = false;
                 toolSprites[1].enabled = true;
+
             }
+           
         } else
         {
             toolSprites[0].enabled = false;
