@@ -110,8 +110,8 @@ TextureImporter:
         serializedVersion: 2
         x: 15
         y: 72
-        width: 40
-        height: 46
+        width: 39
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
         serializedVersion: 2
         x: 79
         y: 73
-        width: 34
-        height: 46
+        width: 35
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: chop_0
       rect:
         serializedVersion: 2
-        x: 146
+        x: 145
         y: 72
-        width: 34
-        height: 45
+        width: 35
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +174,7 @@ TextureImporter:
         x: 208
         y: 76
         width: 35
-        height: 44
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
