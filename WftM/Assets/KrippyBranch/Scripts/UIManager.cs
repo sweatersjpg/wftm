@@ -8,6 +8,9 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [SerializeField]
+    bool isMainMenu;
+
+    [SerializeField]
     GameObject pausePanel, mainPanel, optionsPanel;
 
     public static bool isGamePaused;
@@ -26,6 +29,12 @@ public class UIManager : MonoBehaviour
     {
         checkVolume();
         CheckPausedState();
+
+        if (isMainMenu)
+        {
+            isGamePaused = true; //just done so menu is shown, same system as Pause
+            return;
+        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -76,10 +85,13 @@ public class UIManager : MonoBehaviour
             case true:
                 if (doneCheck)
                     return;
-                AudioListener.pause = true;
+                if(!isMainMenu)
+                {
+                    AudioListener.pause = true;
+                    Time.timeScale = 0f;
+                }
                 mainPanel.SetActive(true);
                 pausePanel.SetActive(true);
-                Time.timeScale = 0f;
                 doneCheck = true;
                 break;
             case false:
@@ -136,5 +148,16 @@ public class UIManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("MVolume", sliderMusic.value);
         PlayerPrefs.SetFloat("SFXVolume", sliderSFX.value);
+    }
+
+    public void StartGame(int levelIndex)
+    {
+        isGamePaused = false;
+        SceneManager.LoadScene(levelIndex);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
