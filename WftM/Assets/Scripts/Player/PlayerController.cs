@@ -38,10 +38,18 @@ public class PlayerController : MonoBehaviour
 
     Vector2 input;
 
+    [SerializeField]
+    float moneyGain = 100;
+    [SerializeField]
+    float moneySpeed = 9;
+
     public TextMeshProUGUI rockCountText;
     public TextMeshProUGUI woodCountText;
     public TextMeshProUGUI healthCountText;
     public TextMeshProUGUI foodCountText;
+    public TextMeshProUGUI moneyCountText;
+
+    public GameObject moneyIcon;
 
     [SerializeField]
     float maxItems = 50;
@@ -50,6 +58,9 @@ public class PlayerController : MonoBehaviour
     float woodCount = 0;
     float healthCount = 100;
     float foodCount = 0;
+    float moneyCount = 0;
+
+    float moneyCountOld = 0;
 
     [SerializeField]
     Sprite[] resourceItemSprites;
@@ -88,6 +99,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (moneyCountOld != moneyCount)
+        {
+            moneyCountOld += moneySpeed;
+            moneyIcon.GetComponent<Interactable>().DoHit();
+
+            if (moneyCount - moneyCountOld < moneySpeed)
+            {
+                moneyCountOld = moneyCount;
+            }
+        }
 
         if (gameOver)
         {
@@ -190,11 +211,13 @@ public class PlayerController : MonoBehaviour
                     {
                         woodCount -= 5;
                         hit.transform.SendMessage("DoHit");
+                        moneyCount += moneyGain;
                     }
                     else if (rockCount >= 5)
                     {
                         rockCount -= 5;
                         hit.transform.SendMessage("DoHit");
+                        moneyCount += moneyGain;
                     }
                 }
                 else if (hit.transform.CompareTag("Pond"))
@@ -366,6 +389,7 @@ public class PlayerController : MonoBehaviour
         rockCountText.text = rockCount + "";
         woodCountText.text = woodCount + "";
         foodCountText.text = "(q) " + foodCount;
+        moneyCountText.text = ((int)moneyCountOld) + "$";
 
         healthCountText.text = Mathf.Floor(healthCount) + "%";
         if (gameOver) healthCountText.text += " (Click anywhere to restart)";
@@ -373,6 +397,10 @@ public class PlayerController : MonoBehaviour
         LerpColor(rockCountText);
         LerpColor(woodCountText);
         LerpColor(healthCountText);
+
+        
+
+        moneyCountOld = Mathf.Clamp(moneyCountOld, 0f, moneyCount);
     }
 
     void LerpColor(TextMeshProUGUI tm)
