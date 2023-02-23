@@ -7,6 +7,8 @@ public class WeatherManager : MonoBehaviour
     public Transform resSourceCount;
     public static float resourcesGathered=0;
 
+    public AudioSource wind;
+
     public Color liveGrass;
     public Color driedGrass;
 
@@ -24,6 +26,8 @@ public class WeatherManager : MonoBehaviour
         resourcesGathered = 1 - ((float) GetResCount() / (float) totalRes);
 
         Camera.main.backgroundColor = Color.Lerp(liveGrass, driedGrass, resourcesGathered);
+
+        wind.volume = resourcesGathered;
     }
 
     int GetResCount()

@@ -297,7 +297,7 @@ public class PlayerController : MonoBehaviour
         Vector2 vel = input;
 
         // putting this here because i don't like Time.deltaTime
-        healthCount -= 100f / timeBeforeDeath / 12f;
+        healthCount -= (100f / timeBeforeDeath / 12f) * (1+WeatherManager.resourcesGathered);
 
         if(healthCount < 0)
         {

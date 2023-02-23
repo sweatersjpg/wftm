@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/KrippyBranch/Scenes/Main Menu.unity
     guid: 7a8f3169ce0865f4586254715a1f13ed
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 65d109ed475244ea2bbeba3b78b51b2d
+    path: Assets/Scenes/Playtest2.unity
+    guid: eb42c2ec694434eb3a14dae3e26a0248
   m_configObjects: {}
