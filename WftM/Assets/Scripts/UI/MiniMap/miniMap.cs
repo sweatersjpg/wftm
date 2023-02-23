@@ -5,6 +5,7 @@ using UnityEngine;
 public class miniMap : MonoBehaviour
 {
     public RectTransform parent;
+    public Vector2 hiddenPosition;
 
     [Header("Map Elements")]
     public GameObject treePrefab;
@@ -39,7 +40,7 @@ public class miniMap : MonoBehaviour
             parent.anchoredPosition -= parent.anchoredPosition / 4;
         } else
         {
-            parent.anchoredPosition += (new Vector2(0, -630) - parent.anchoredPosition) / 4;
+            parent.anchoredPosition += (hiddenPosition - parent.anchoredPosition) / 4;
         }
 
         if (Input.GetKeyDown(KeyCode.M)) show = !show;
