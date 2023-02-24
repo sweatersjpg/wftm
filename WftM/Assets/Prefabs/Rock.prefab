@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2211420297679730356}
   m_Layer: 7
   m_Name: Rock
-  m_TagString: Untagged
+  m_TagString: Boulder
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,6 +228,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   WobbleDuration: 0.2
+  ignoreFlip: 0
 --- !u!58 &2211420297679730356
 CircleCollider2D:
   m_ObjectHideFlags: 0

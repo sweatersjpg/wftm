@@ -11,6 +11,8 @@ TagManager:
   - Machine
   - Health
   - Pond
+  - Tree
+  - Boulder
   layers:
   - Default
   - TransparentFX
