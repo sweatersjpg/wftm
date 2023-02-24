@@ -503,7 +503,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.45503736, g: 0.5286779, b: 0.7264151, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -736,15 +736,15 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -3.570138
-      outSlope: -3.570138
+      inSlope: -75.95751
+      outSlope: -75.95751
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.10501301
-      value: 0.62508905
+      time: 0.0050183535
+      value: 0.61881834
       inSlope: -0.038782332
       outSlope: -0.038782332
       tangentMode: 0
@@ -752,26 +752,26 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.16260657
     - serializedVersion: 3
-      time: 0.81507874
-      value: 0.8621685
-      inSlope: 0.824482
-      outSlope: 0.824482
+      time: 0.57001483
+      value: 0.62150425
+      inSlope: 0.015855426
+      outSlope: 0.015855426
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.8413384
+      inWeight: 1
+      outWeight: 0.5782175
     - serializedVersion: 3
-      time: 0.8925862
-      value: 1.486025
-      inSlope: 2.0152123
-      outSlope: 2.0152123
+      time: 0.76419055
+      value: 1.4924343
+      inSlope: -0.72305495
+      outSlope: -0.72305495
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.082646705
-      outWeight: 0.25428736
+      outWeight: 0.14008965
     - serializedVersion: 3
-      time: 0.97501576
-      value: 0.6873516
+      time: 0.8628942
+      value: 0.6357769
       inSlope: -0.02625731
       outSlope: -0.02625731
       tangentMode: 0
@@ -781,8 +781,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 12.513825
-      outSlope: 12.513825
+      inSlope: 2.656511
+      outSlope: 2.656511
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -913,7 +913,7 @@ PrefabInstance:
       objectReference: {fileID: 1193236659}
     - target: {fileID: 5284012631155246633, guid: 6637b01e31fce784eb6012655984efc2, type: 3}
       propertyPath: moneySpeed
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5284012631155246633, guid: 6637b01e31fce784eb6012655984efc2, type: 3}
       propertyPath: foodCountText
