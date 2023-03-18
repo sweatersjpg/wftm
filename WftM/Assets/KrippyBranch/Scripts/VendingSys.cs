@@ -13,6 +13,14 @@ public class VendingSys : MonoBehaviour
     [SerializeField] TextMeshProUGUI rockCountText;
     [SerializeField] TextMeshProUGUI woodCountText;
 
+    [SerializeField] TextMeshProUGUI upgradePricePickText;
+    [SerializeField] TextMeshProUGUI upgradePriceAxeText;
+    [SerializeField] TextMeshProUGUI buyHealthPackText;
+
+    [SerializeField] float priceUpgradePick;
+    [SerializeField] float priceUpgradeAxe;
+    [SerializeField] float priceBuyHealthPack;
+
     float localRock;
     float localWood;
 
@@ -49,6 +57,11 @@ public class VendingSys : MonoBehaviour
 
         rockCountText.text = localRock.ToString();
         woodCountText.text = localWood.ToString();
+
+
+        upgradePricePickText.text = priceUpgradePick.ToString();
+        upgradePriceAxeText.text = priceUpgradeAxe.ToString();
+        buyHealthPackText.text = priceBuyHealthPack.ToString();
     }
 
     public void HideUI()
@@ -66,11 +79,11 @@ public class VendingSys : MonoBehaviour
         // upgrade sys here
     }
 
-    public void BuyHealthPack(float price)
+    public void BuyHealthPack()
     {
-        if (localWood >= price)
+        if (localWood >= priceBuyHealthPack)
         {
-            player.woodCount -= price;
+            player.woodCount -= priceBuyHealthPack;
             player.foodCount++;
         }
     }
