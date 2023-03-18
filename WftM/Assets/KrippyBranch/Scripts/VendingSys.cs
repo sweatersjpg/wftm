@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class VendingSystem : MonoBehaviour
+public class VendingSys : MonoBehaviour
 {
     [SerializeField] private PlayerController playerController;
     [SerializeField] private GameObject vendingMachine;
