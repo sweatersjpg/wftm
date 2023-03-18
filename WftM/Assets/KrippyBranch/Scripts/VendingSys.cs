@@ -4,8 +4,8 @@ using TMPro;
 
 public class VendingSys : MonoBehaviour
 {
-    [SerializeField] private PlayerController playerController;
-    [SerializeField] private GameObject vendingMachine;
+    PlayerController playerController;
+    GameObject vendingMachine;
     [SerializeField] private Canvas vendingUICanvas;
 
     [SerializeField] private TextMeshProUGUI rockCountText;

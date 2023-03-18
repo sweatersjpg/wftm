@@ -2014,6 +2014,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5456373800863807278, guid: 2da2576201fcbd24d81b28ddb3dd5781, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456373801071277016, guid: 2da2576201fcbd24d81b28ddb3dd5781, type: 3}
+      propertyPath: vendingUICanvas
+      value: 
+      objectReference: {fileID: 958627769}
     - target: {fileID: 5456373801071277016, guid: 2da2576201fcbd24d81b28ddb3dd5781, type: 3}
       propertyPath: buyHealthPackText
       value: 
@@ -2028,6 +2036,10 @@ PrefabInstance:
       objectReference: {fileID: 55259401}
     - target: {fileID: 5456373801071277016, guid: 2da2576201fcbd24d81b28ddb3dd5781, type: 3}
       propertyPath: upgradePricePickText
+      value: 
+      objectReference: {fileID: 968470791}
+    - target: {fileID: 5456373801071277016, guid: 2da2576201fcbd24d81b28ddb3dd5781, type: 3}
+      propertyPath: upgradePricePickaxeText
       value: 
       objectReference: {fileID: 968470791}
     - target: {fileID: 5456373801071277017, guid: 2da2576201fcbd24d81b28ddb3dd5781, type: 3}
@@ -3283,6 +3295,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5396905157056860242, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
   m_PrefabInstance: {fileID: 956623404}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &958627769 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 5456373802283284890, guid: 2da2576201fcbd24d81b28ddb3dd5781, type: 3}
+  m_PrefabInstance: {fileID: 686780227}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &968470791 stripped
 MonoBehaviour:
