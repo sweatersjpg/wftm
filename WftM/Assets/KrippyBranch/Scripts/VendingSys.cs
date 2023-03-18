@@ -1,90 +1,103 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
-public class VendingSys : MonoBehaviour
+public class VendingSystem : MonoBehaviour
 {
-    PlayerController player;
+    [SerializeField] private PlayerController playerController;
+    [SerializeField] private GameObject vendingMachine;
+    [SerializeField] private Canvas vendingUICanvas;
 
-    GameObject vendingMachineObj;
-    [SerializeField] Canvas vendingUI;
+    [SerializeField] private TextMeshProUGUI rockCountText;
+    [SerializeField] private TextMeshProUGUI woodCountText;
+    [SerializeField] private TextMeshProUGUI upgradePricePickaxeText;
+    [SerializeField] private TextMeshProUGUI upgradePriceAxeText;
+    [SerializeField] private TextMeshProUGUI buyHealthPackText;
 
-    [SerializeField] TextMeshProUGUI rockCountText;
-    [SerializeField] TextMeshProUGUI woodCountText;
+    [SerializeField] private float priceUpgradePickaxe;
+    [SerializeField] private float priceUpgradeAxe;
+    [SerializeField] private float priceBuyHealthPack;
 
-    [SerializeField] TextMeshProUGUI upgradePricePickText;
-    [SerializeField] TextMeshProUGUI upgradePriceAxeText;
-    [SerializeField] TextMeshProUGUI buyHealthPackText;
-
-    [SerializeField] float priceUpgradePick;
-    [SerializeField] float priceUpgradeAxe;
-    [SerializeField] float priceBuyHealthPack;
-
-    float localRock;
-    float localWood;
-
-    bool isPlayerInRange;
+    private bool isPlayerInRange;
 
     private void Start()
     {
-        vendingMachineObj = GameObject.FindGameObjectWithTag("Machine");
-        player = FindObjectOfType<PlayerController>();
+        if (playerController == null)
+        {
+            playerController = FindObjectOfType<PlayerController>();
+        }
+
+        if (vendingMachine == null)
+        {
+            vendingMachine = GameObject.FindGameObjectWithTag("Machine");
+        }
+
+        if (vendingUICanvas != null)
+        {
+            vendingUICanvas.gameObject.SetActive(false);
+        }
     }
 
-    void Update()
+    private void Update()
     {
-        if (!vendingMachineObj && !player)
+        if (!vendingMachine || !playerController)
+        {
             return;
+        }
 
-        if (Vector2.Distance(player.transform.position, vendingMachineObj.transform.position) <= 2)
+        float distance = Vector2.Distance(playerController.transform.position, vendingMachine.transform.position);
+
+        if (distance <= 2)
         {
             isPlayerInRange = true;
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                vendingUI.gameObject.SetActive(true);
+                vendingUICanvas.gameObject.SetActive(true);
             }
         }
         else
         {
             isPlayerInRange = false;
-            vendingUI.gameObject.SetActive(false);
+            vendingUICanvas.gameObject.SetActive(false);
         }
 
-        localRock = player.rockCount;
-        localWood = player.woodCount;
+        UpdateTextValues();
+    }
 
-        rockCountText.text = localRock.ToString();
-        woodCountText.text = localWood.ToString();
-
-
-        upgradePricePickText.text = priceUpgradePick.ToString();
+    private void UpdateTextValues()
+    {
+        rockCountText.text = playerController.rockCount.ToString();
+        woodCountText.text = playerController.woodCount.ToString();
+        upgradePricePickaxeText.text = priceUpgradePickaxe.ToString();
         upgradePriceAxeText.text = priceUpgradeAxe.ToString();
         buyHealthPackText.text = priceBuyHealthPack.ToString();
     }
 
     public void HideUI()
     {
-        vendingUI.gameObject.SetActive(false);
+        if (vendingUICanvas != null)
+        {
+            vendingUICanvas.gameObject.SetActive(false);
+        }
     }
 
     public void UpgradePickaxe()
     {
-        // upgrade sys here
+        // upgrade pickaxe system here
     }
 
     public void UpgradeAxe()
     {
-        // upgrade sys here
+        // upgrade axe system here
     }
 
     public void BuyHealthPack()
     {
-        if (localWood >= priceBuyHealthPack)
+        if (playerController.woodCount >= priceBuyHealthPack)
         {
-            player.woodCount -= priceBuyHealthPack;
-            player.foodCount++;
+            playerController.woodCount -= priceBuyHealthPack;
+            playerController.foodCount++;
         }
     }
 }
