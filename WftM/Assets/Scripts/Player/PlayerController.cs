@@ -10,24 +10,30 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     float timeBeforeDeath = 120;
+    [SerializeField]
+    float climageEffectivenessScale = 2;
 
     [SerializeField]
     float maxSpeed = 0.1f;
     [SerializeField]
     float minSpeed = 0.05f;
 
+    [SerializeField]
+    AnimationCurve movementSpeedOverTime;
+
     float lastFrame;
+    [Space]
     [SerializeField]
     float animationFPS = 12;
     int animTic = 0;
 
+    [Space]
     [SerializeField]
     Sprite[] sprites;
 
     SpriteRenderer sr;
     Rigidbody2D rb;
 
-    [SerializeField]
     float chopDuration = 0.5f;
     float chopStart = -100;
     bool hasChopped = true;
@@ -44,6 +50,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float moneySpeed = 9;
 
+    [Header("UI elements")]
     public TextMeshProUGUI rockCountText;
     public TextMeshProUGUI woodCountText;
     public TextMeshProUGUI healthCountText;
@@ -199,7 +206,8 @@ public class PlayerController : MonoBehaviour
 
         if (Time.time - chopStart > chopDuration)
         {
-            float speed = minSpeed + (maxSpeed - minSpeed) * healthCount / 100;
+            //float speed = minSpeed + (maxSpeed - minSpeed) * healthCount / 100;
+            float speed = Mathf.Lerp(minSpeed, maxSpeed, movementSpeedOverTime.Evaluate(1-(healthCount / 100)));
 
             rb.MovePosition(rb.position + (speed * input * Time.fixedDeltaTime) * 50);
         }
@@ -282,7 +290,7 @@ public class PlayerController : MonoBehaviour
         Vector2 vel = input;
 
         // putting this here because i don't like Time.deltaTime
-        healthCount -= (100f / timeBeforeDeath / 12f) * (1+WeatherManager.resourcesGathered);
+        healthCount -= (100f / timeBeforeDeath / 12f) * (1+WeatherManager.resourcesGathered * climageEffectivenessScale);
 
         if(healthCount < 0)
         {

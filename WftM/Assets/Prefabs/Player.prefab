@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 5284012631155246637}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,9 +398,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354f4619378294e6eb5e56a24ad9204e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeDeath: 180
+  timeBeforeDeath: 240
+  climageEffectivenessScale: 2
   maxSpeed: 0.1
   minSpeed: 0
+  movementSpeedOverTime:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.050562847
+      outSlope: -0.050562847
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.1100386
+    - serializedVersion: 3
+      time: 1.0039062
+      value: -0.0015945435
+      inSlope: -2.2510493
+      outSlope: -2.2510493
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.060660634
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   animationFPS: 12
   sprites:
   - {fileID: -1699085837, guid: 24919d93a255243899dfb06b1e5d9aff, type: 3}
@@ -408,16 +433,25 @@ MonoBehaviour:
   - {fileID: 1934635920, guid: 24919d93a255243899dfb06b1e5d9aff, type: 3}
   - {fileID: -2059152542, guid: 24919d93a255243899dfb06b1e5d9aff, type: 3}
   - {fileID: 1720367685, guid: 24919d93a255243899dfb06b1e5d9aff, type: 3}
-  chopDuration: 0.5
+  moneyGain: 100
+  moneySpeed: 6
   rockCountText: {fileID: 0}
   woodCountText: {fileID: 0}
   healthCountText: {fileID: 0}
   foodCountText: {fileID: 0}
+  moneyCountText: {fileID: 0}
+  moneyIcon: {fileID: 0}
   maxItems: 20
+  rockCount: 0
+  woodCount: 0
+  foodCount: 0
+  mineDamage: 0.5
+  chopDamage: 0.5
   resourceItemSprites:
   - {fileID: -19622659, guid: 24919d93a255243899dfb06b1e5d9aff, type: 3}
   - {fileID: -1686269615, guid: 24919d93a255243899dfb06b1e5d9aff, type: 3}
   foodItem: {fileID: 8770103833075573297, guid: 25c4831dd88354cbca4e1788dad5f0ba, type: 3}
+  action: 0
 --- !u!58 &5284012631155246639
 CircleCollider2D:
   m_ObjectHideFlags: 0
