@@ -6,6 +6,7 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController playerController;
 
     [SerializeField]
     float timeBeforeDeath = 120;
@@ -58,8 +59,13 @@ public class PlayerController : MonoBehaviour
     public float woodCount = 0;
     float healthCount = 100;
     public float foodCount = 0;
-    float moneyCount = 0;
 
+    [HideInInspector]
+    public float mineDamage = 0.5f;
+    [HideInInspector]
+    public float chopDamage = 0.5f;
+
+    float moneyCount = 0;
     float moneyCountOld = 0;
 
     [SerializeField]
@@ -76,13 +82,15 @@ public class PlayerController : MonoBehaviour
     private Pond currentPond;
 
     //differentiate between fishing action (hold) and chopping action (hit)
-    public enum actionType { none, machine, chop, fish }
+    public enum actionType { none, machine, chop, mine, fish }
     [SerializeField]
     public actionType action = actionType.none;
 
     // Start is called before the first frame update
     void Start()
     {
+        playerController = this; // overwrite player controller
+
         animationFPS = 1.0f / animationFPS;
         sr = transform.Find("Sprite").GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
@@ -99,16 +107,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moneyCountOld != moneyCount)
-        {
-            moneyCountOld += moneySpeed;
-            moneyIcon.GetComponent<Interactable>().DoHit();
+        //if (moneyCountOld != moneyCount)
+        //{
+        //    moneyCountOld += moneySpeed;
+        //    moneyIcon.GetComponent<Interactable>().DoHit();
 
-            if (moneyCount - moneyCountOld < moneySpeed)
-            {
-                moneyCountOld = moneyCount;
-            }
-        }
+        //    if (moneyCount - moneyCountOld < moneySpeed)
+        //    {
+        //        moneyCountOld = moneyCount;
+        //    }
+        //}
 
         if (gameOver)
         {
@@ -204,34 +212,15 @@ public class PlayerController : MonoBehaviour
             RaycastHit2D hit = Physics2D.CircleCast(toolPivot.Find("hitpoint").position, 0.2f, Vector2.up, 0.2f, LayerMask.GetMask("Breakable"));
             if(hit)
             {
-                if(hit.transform.CompareTag("Machine"))
-                {
+                if (hit.transform.CompareTag("Machine")) return;
 
-                    if (woodCount > rockCount && woodCount >= 5)
-                    {
-                        woodCount -= 5;
-                        hit.transform.SendMessage("DoHit");
-                        moneyCount += moneyGain;
-                    }
-                    else if (rockCount >= 5)
-                    {
-                        rockCount -= 5;
-                        hit.transform.SendMessage("DoHit");
-                        moneyCount += moneyGain;
-                    }
-                }
-                else if (hit.transform.CompareTag("Pond"))
-                {
-                    
-                    
-                    currentPond = hit.transform.GetComponent<Pond>();
-                    currentPond.Cast();
+                float damage = 1;
+                if (action == actionType.chop) damage = chopDamage;
+                if (action == actionType.mine) damage = mineDamage;
 
-                }
-                else hit.transform.SendMessage("DoHit");
+                if (hit.transform.CompareTag("Pond")) hit.transform.GetComponent<Pond>().Cast();
+                else hit.transform.SendMessage("DoHit", damage);
             }
-
-
 
             hasChopped = true;
         }
@@ -266,18 +255,14 @@ public class PlayerController : MonoBehaviour
                     return false;
                 }
             }
-            else if (hit.transform.CompareTag("Pond"))
-            {
-                toolSprites[0].sprite = hit.transform.GetComponent<Interactable>().tool;
-                toolSprites[1].sprite = hit.transform.GetComponent<Interactable>().tool;
-                action = actionType.fish;
-            }
             else
             {
-                // hit.transform.SendMessage("DoHit");
-                toolSprites[0].sprite = hit.transform.GetComponent<Breakable>().tool;
-                toolSprites[1].sprite = hit.transform.GetComponent<Breakable>().tool;
-                action = actionType.chop;
+                Breakable breakable = hit.transform.GetComponent<Breakable>();
+
+                toolSprites[0].sprite = breakable.tool;
+                toolSprites[1].sprite = breakable.tool;
+
+                action = breakable.toolType;
             }
 
             //Debug.Log(hit.transform.name);

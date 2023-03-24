@@ -12,7 +12,7 @@ public class Breakable : MonoBehaviour
     public float itemsDropChance = 0.8f;
     public int itemsOnHit = 1;
     public int itemsOnDestroy = 3;
-    public int health = 3;
+    public float health = 3;
 
     [SerializeField]
     AnimationCurve Wobble;
@@ -26,6 +26,8 @@ public class Breakable : MonoBehaviour
 
     [SerializeField]
     bool hasSFX = false;
+
+    public PlayerController.actionType toolType;
 
     private void Awake()
     {
@@ -49,15 +51,19 @@ public class Breakable : MonoBehaviour
     //    }
     //}
 
-    public void DoHit()
+    public void DoHit(float damage)
     {
         WobbleStart = Time.time;
 
-        health--;
+        health -= damage;
+
+        float chance = (damage * itemsDropChance) / Mathf.Ceil(damage);
+        DropItems((int)Mathf.Ceil(damage), chance);
+        if (hasSFX) gameObject.SendMessage("PlaySFX");
 
         if (health < 0)
         {
-            DropItems(itemsOnDestroy);
+            DropItems(itemsOnDestroy, itemsDropChance);
 
             if (hasSFX)
             {
@@ -65,19 +71,15 @@ public class Breakable : MonoBehaviour
                 gameObject.layer = LayerMask.GetMask("Default");
                 gameObject.SendMessage("FinalSFX", true);
             } else Destroy(gameObject);
-        } else
-        {
-            DropItems(itemsOnHit);
-            if(hasSFX) gameObject.SendMessage("PlaySFX");
         }
     }
 
-    void DropItems(int n)
+    void DropItems(int n, float dropChance)
     {
         if (itemDrop == null) return;
         for (int i = 0; i < n; i++)
         {
-            if (Random.value > itemsDropChance) continue;
+            if (Random.value > dropChance) continue;
 
             GameObject item = Instantiate(itemDrop);
 

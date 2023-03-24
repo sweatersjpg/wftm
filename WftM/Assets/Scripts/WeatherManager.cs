@@ -33,7 +33,7 @@ public class WeatherManager : MonoBehaviour
 
         wind.volume = resourcesGathered;
 
-        var emission = windParticles.emission;
+        ParticleSystem.EmissionModule emission = windParticles.emission;
         emission.rateOverTime = Mathf.Lerp(minParticles, maxParticles, resourcesGathered);
     }
 
