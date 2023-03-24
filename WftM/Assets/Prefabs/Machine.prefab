@@ -271,19 +271,19 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7297685148567443293}
   m_Enabled: 1
-  m_MinDistance: 18.712173
-  m_MaxDistance: 33.74
-  m_ReverbPreset: 7
+  m_MinDistance: 50
+  m_MaxDistance: 100
+  m_ReverbPreset: 16
   m_Room: -1000
-  m_RoomHF: -476
-  m_DecayTime: 4.32
-  m_DecayHFRatio: 0.59
-  m_Reflections: -789
-  m_ReflectionsDelay: 0.02
-  m_Reverb: -289
-  m_ReverbDelay: 0.03
+  m_RoomHF: -3300
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.54
+  m_Reflections: -2560
+  m_ReflectionsDelay: 0.162
+  m_Reverb: -229
+  m_ReverbDelay: 0.088
   m_HFReference: 5000
-  m_Diffusion: 100
+  m_Diffusion: 79
   m_Density: 100
   m_LFReference: 250
   m_RoomLF: 0
@@ -380,7 +380,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
