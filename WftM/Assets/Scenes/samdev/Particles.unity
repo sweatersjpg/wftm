@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (10)
@@ -192,6 +196,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (60)
@@ -254,6 +262,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (8)
@@ -316,6 +328,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (42)
@@ -378,6 +394,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (16)
@@ -440,6 +460,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (27)
@@ -513,6 +537,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (17)
@@ -575,6 +603,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (2)
@@ -637,6 +669,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (46)
@@ -699,6 +735,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (59)
@@ -761,6 +801,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (72)
@@ -823,6 +867,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (66)
@@ -885,6 +933,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (13)
@@ -947,6 +999,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (9)
@@ -1009,6 +1065,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (8)
@@ -1071,6 +1131,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (86)
@@ -1133,6 +1197,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (48)
@@ -1239,6 +1307,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree
@@ -1301,6 +1373,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (38)
@@ -1363,6 +1439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (13)
@@ -1425,6 +1505,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (48)
@@ -1487,6 +1571,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (39)
@@ -1549,6 +1637,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (87)
@@ -1611,6 +1703,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (7)
@@ -1673,6 +1769,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (58)
@@ -6611,6 +6711,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (11)
@@ -6680,6 +6784,7 @@ GameObject:
   - component: {fileID: 664740576}
   - component: {fileID: 664740578}
   - component: {fileID: 664740579}
+  - component: {fileID: 664740580}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6714,7 +6819,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6799,6 +6904,39 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664740572}
   m_Enabled: 1
+--- !u!114 &664740580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664740572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1001 &686780227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6863,6 +7001,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (75)
@@ -6925,6 +7067,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (49)
@@ -6987,6 +7133,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (7)
@@ -7049,6 +7199,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (3)
@@ -7111,6 +7265,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (61)
@@ -7173,6 +7331,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (67)
@@ -7235,6 +7397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (46)
@@ -7297,6 +7463,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (31)
@@ -7359,6 +7529,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (5)
@@ -7414,6 +7588,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2211420297679730357, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
   m_PrefabInstance: {fileID: 814609647}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &820765460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820765462}
+  - component: {fileID: 820765461}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &820765461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820765460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 10f330098a5612c479b38f696a921b78, type: 2}
+--- !u!4 &820765462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820765460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.1065636, y: 0.29787296, z: -0.053618066}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &843240082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7421,6 +7644,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (14)
@@ -7483,6 +7710,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (32)
@@ -7545,6 +7776,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (61)
@@ -7607,6 +7842,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (33)
@@ -7798,6 +8037,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (16)
@@ -7860,6 +8103,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (26)
@@ -7922,6 +8169,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (1)
@@ -7984,6 +8235,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock
@@ -8046,6 +8301,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (54)
@@ -8108,6 +8367,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (34)
@@ -8170,6 +8433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (14)
@@ -8232,6 +8499,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (6)
@@ -8294,6 +8565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (57)
@@ -8356,6 +8631,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (11)
@@ -8418,6 +8697,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (51)
@@ -8480,6 +8763,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (56)
@@ -8542,6 +8829,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (65)
@@ -8604,6 +8895,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (45)
@@ -8666,6 +8961,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (4)
@@ -8733,6 +9032,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (30)
@@ -8795,6 +9098,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (56)
@@ -8857,6 +9164,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (64)
@@ -8919,6 +9230,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (33)
@@ -8981,6 +9296,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (51)
@@ -9043,6 +9362,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (73)
@@ -9116,6 +9439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (9)
@@ -9178,6 +9505,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (3)
@@ -9240,6 +9571,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (12)
@@ -9302,6 +9637,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (18)
@@ -9364,6 +9703,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (15)
@@ -9426,6 +9769,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (38)
@@ -9493,6 +9840,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (74)
@@ -9555,6 +9906,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (55)
@@ -9617,6 +9972,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (1)
@@ -9798,6 +10157,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (2)
@@ -9916,6 +10279,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9003607845998540756, guid: df0533f77c3b3d34ab3b1fff589a0bd7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df0533f77c3b3d34ab3b1fff589a0bd7, type: 3}
 --- !u!1001 &1743037709
@@ -9925,6 +10292,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (53)
@@ -9987,6 +10358,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (64)
@@ -10049,6 +10424,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (22)
@@ -10111,6 +10490,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (4)
@@ -10173,6 +10556,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (45)
@@ -10235,6 +10622,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (18)
@@ -10297,6 +10688,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (12)
@@ -10359,6 +10754,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (63)
@@ -10421,6 +10820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (68)
@@ -10483,6 +10886,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5284012629728379918, guid: 6637b01e31fce784eb6012655984efc2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
+    - target: {fileID: 5284012630529419099, guid: 6637b01e31fce784eb6012655984efc2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
+    - target: {fileID: 5284012630928897464, guid: 6637b01e31fce784eb6012655984efc2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5284012631155246632, guid: 6637b01e31fce784eb6012655984efc2, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -10564,6 +10979,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (10)
@@ -10626,6 +11045,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (15)
@@ -10688,6 +11111,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (62)
@@ -10836,7 +11263,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10956,6 +11383,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (17)
@@ -11018,6 +11449,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (35)
@@ -11080,6 +11515,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (57)
@@ -11142,6 +11581,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (50)
@@ -11204,6 +11647,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 2211420296809579947, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 2211420297679730353, guid: c9adea24d23654c2ca139f39876748f2, type: 3}
       propertyPath: m_Name
       value: Rock (6)
@@ -11323,6 +11770,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626426100}
     m_Modifications:
+    - target: {fileID: 5396905156250744563, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2b16da17a1aaa44852c09d1423c5ec, type: 2}
     - target: {fileID: 5396905157056860241, guid: 21a4ec3363d2e4d87b6c605f38a49e36, type: 3}
       propertyPath: m_Name
       value: Tree (5)
