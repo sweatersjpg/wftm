@@ -8,6 +8,10 @@ public class WeatherManager : MonoBehaviour
     public static float resourcesGathered=0;
 
     public AudioSource wind;
+    public ParticleSystem windParticles;
+
+    public int minParticles = 2;
+    public int maxParticles = 20;
 
     public Color liveGrass;
     public Color driedGrass;
@@ -28,6 +32,9 @@ public class WeatherManager : MonoBehaviour
         Camera.main.backgroundColor = Color.Lerp(liveGrass, driedGrass, resourcesGathered);
 
         wind.volume = resourcesGathered;
+
+        var emission = windParticles.emission;
+        emission.rateOverTime = Mathf.Lerp(minParticles, maxParticles, resourcesGathered);
     }
 
     int GetResCount()

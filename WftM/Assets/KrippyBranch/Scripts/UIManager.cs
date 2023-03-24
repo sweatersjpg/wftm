@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    static UIManager instance;
+
     [SerializeField] GameObject optionsPanel;
     [SerializeField] Slider sliderMusic, sliderSFX;
     [SerializeField] AudioMixer musicMixer, sfxMixer;
@@ -17,6 +19,14 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
+        if(instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+
         SceneManager.sceneLoaded += OnSceneLoaded;
         DontDestroyOnLoad(gameObject);
     }
