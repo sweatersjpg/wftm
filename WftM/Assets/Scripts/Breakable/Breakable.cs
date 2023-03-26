@@ -24,6 +24,9 @@ public class Breakable : MonoBehaviour
     [SerializeField]
     bool ignoreFlip = false;
 
+    [SerializeField]
+    bool hasSFX = false;
+
     private void Awake()
     {
         if(!ignoreFlip) GetComponentInChildren<SpriteRenderer>().flipX = Random.value > 0.5;
@@ -55,10 +58,17 @@ public class Breakable : MonoBehaviour
         if (health < 0)
         {
             DropItems(itemsOnDestroy);
-            Destroy(gameObject);
+
+            if (hasSFX)
+            {
+                enabled = false;
+                gameObject.layer = LayerMask.GetMask("Default");
+                gameObject.SendMessage("FinalSFX", true);
+            } else Destroy(gameObject);
         } else
         {
             DropItems(itemsOnHit);
+            if(hasSFX) gameObject.SendMessage("PlaySFX");
         }
     }
 

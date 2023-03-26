@@ -54,10 +54,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float maxItems = 50;
 
-    float rockCount = 0;
-    float woodCount = 0;
+    public float rockCount = 0;
+    public float woodCount = 0;
     float healthCount = 100;
-    float foodCount = 0;
+    public float foodCount = 0;
     float moneyCount = 0;
 
     float moneyCountOld = 0;
@@ -297,7 +297,7 @@ public class PlayerController : MonoBehaviour
         Vector2 vel = input;
 
         // putting this here because i don't like Time.deltaTime
-        healthCount -= 100f / timeBeforeDeath / 12f;
+        healthCount -= (100f / timeBeforeDeath / 12f) * (1+WeatherManager.resourcesGathered);
 
         if(healthCount < 0)
         {
