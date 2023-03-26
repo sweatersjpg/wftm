@@ -1997,6 +1997,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resSourceCount: {fileID: 1626426100}
   wind: {fileID: 941405314}
+  windParticles: {fileID: 0}
+  minParticles: 2
+  maxParticles: 20
   liveGrass: {r: 0.39215687, g: 0.6431373, b: 0.4627451, a: 0}
   driedGrass: {r: 0.6431373, g: 0.58431375, b: 0.39215687, a: 0}
 --- !u!81 &664740579
@@ -6900,6 +6903,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 587653347, guid: f537f35afc54ea3468657a5aca3e42bc, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 947088113, guid: f537f35afc54ea3468657a5aca3e42bc, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 2671770559242935497, guid: f537f35afc54ea3468657a5aca3e42bc, type: 3}
       propertyPath: m_Enabled
       value: 0

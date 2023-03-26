@@ -566,7 +566,7 @@ MonoBehaviour:
       - m_Target: {fileID: 5456373801071277016}
         m_TargetAssemblyTypeName: VendingSys, Assembly-CSharp
         m_MethodName: BuyHealthPack
-        m_Mode: 4
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -696,9 +696,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d184c7681a72a45b8c97ff2deaeba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vendingUI: {fileID: 5456373802283284890}
+  vendingUICanvas: {fileID: 5456373802283284890}
   rockCountText: {fileID: 5456373802592176635}
   woodCountText: {fileID: 5456373802259541766}
+  upgradePricePickaxeText: {fileID: 5456373802105656262}
+  upgradePriceAxeText: {fileID: 5456373801425080472}
+  buyHealthPackText: {fileID: 5456373801396399005}
+  priceUpgradePickaxe: 5
+  priceUpgradeAxe: 5
+  priceBuyHealthPack: 5
+  pickaxeUpgrade: 0.5
+  axeUpgrade: 0.5
 --- !u!1 &5456373801146307704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,7 +2107,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5456373802003705061}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5456373801071277016}
+        m_TargetAssemblyTypeName: VendingSys, Assembly-CSharp
+        m_MethodName: UpgradePickaxe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5456373802105656264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,7 +2376,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5456373802112481385}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5456373801071277016}
+        m_TargetAssemblyTypeName: VendingSys, Assembly-CSharp
+        m_MethodName: UpgradeAxe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5456373802257209338
 GameObject:
   m_ObjectHideFlags: 0

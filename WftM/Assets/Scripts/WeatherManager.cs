@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WeatherManager : MonoBehaviour
 {
+    [SerializeField] SpriteRenderer grassObj;
     public Transform resSourceCount;
     public static float resourcesGathered=0;
 
@@ -29,11 +30,11 @@ public class WeatherManager : MonoBehaviour
     {
         resourcesGathered = 1 - ((float) GetResCount() / (float) totalRes);
 
-        Camera.main.backgroundColor = Color.Lerp(liveGrass, driedGrass, resourcesGathered);
+        grassObj.color = Color.Lerp(liveGrass, driedGrass, resourcesGathered);
 
         wind.volume = resourcesGathered;
 
-        var emission = windParticles.emission;
+        ParticleSystem.EmissionModule emission = windParticles.emission;
         emission.rateOverTime = Mathf.Lerp(minParticles, maxParticles, resourcesGathered);
     }
 

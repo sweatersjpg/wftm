@@ -18,6 +18,10 @@ public class VendingSys : MonoBehaviour
     [SerializeField] private float priceUpgradeAxe;
     [SerializeField] private float priceBuyHealthPack;
 
+    [Space]
+    [SerializeField] float pickaxeUpgrade = 0.5f;
+    [SerializeField] float axeUpgrade = 0.5f;
+
     private bool isPlayerInRange;
 
     private void Start()
@@ -85,11 +89,27 @@ public class VendingSys : MonoBehaviour
     public void UpgradePickaxe()
     {
         // upgrade pickaxe system here
+
+        if (playerController.rockCount >= priceUpgradePickaxe)
+        {
+            playerController.rockCount -= priceUpgradePickaxe;
+            playerController.mineDamage += pickaxeUpgrade;
+
+            priceUpgradePickaxe = Mathf.Min(20, priceUpgradePickaxe + 5);
+        }
     }
 
     public void UpgradeAxe()
     {
         // upgrade axe system here
+
+        if (playerController.rockCount >= priceUpgradeAxe)
+        {
+            playerController.rockCount -= priceUpgradeAxe;
+            playerController.chopDamage += axeUpgrade;
+
+            priceUpgradeAxe = Mathf.Min(20, priceUpgradeAxe + 5);
+        }
     }
 
     public void BuyHealthPack()
