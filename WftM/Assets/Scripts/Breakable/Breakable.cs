@@ -5,7 +5,7 @@ using UnityEngine;
 public class Breakable : MonoBehaviour
 {
     [SerializeField]
-    GameObject itemDrop;
+    public GameObject itemDrop;
 
     public Sprite tool;
 
@@ -23,6 +23,9 @@ public class Breakable : MonoBehaviour
 
     [SerializeField]
     bool ignoreFlip = false;
+
+    [SerializeField]
+    bool breakable = true;
 
     [SerializeField]
     bool hasSFX = false;
@@ -55,7 +58,8 @@ public class Breakable : MonoBehaviour
     {
         WobbleStart = Time.time;
 
-        health -= damage;
+        if (breakable) health -= damage;
+
 
         float chance = (damage * itemsDropChance) / Mathf.Ceil(damage);
         DropItems((int)Mathf.Ceil(damage), chance);

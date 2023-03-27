@@ -18,7 +18,7 @@ public class Pond : MonoBehaviour
     private bool canCatch = false;
 
     
-    private Interactable interactable;
+    private Breakable breakable;
     private SpriteRenderer sr;
 
     //player casts their line then is in fishing mode
@@ -26,7 +26,7 @@ public class Pond : MonoBehaviour
     private void Start()
     {
         currentCount = fishCount;
-        interactable = GetComponent<Interactable>();
+        breakable = GetComponent<Breakable>();
         sr = GetComponent<SpriteRenderer>();
     }
 
@@ -67,7 +67,7 @@ public class Pond : MonoBehaviour
 
         if (canCatch)
         {
-            interactable.DropItems(1);
+            breakable.DoHit(1);
             fishCount--;
         }
 

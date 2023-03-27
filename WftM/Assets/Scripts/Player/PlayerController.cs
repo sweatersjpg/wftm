@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
     public float rockCount = 0;
     public float woodCount = 0;
-    float healthCount = 100;
+    public float healthCount = 100;
     public float foodCount = 0;
 
     [HideInInspector]
@@ -226,7 +226,8 @@ public class PlayerController : MonoBehaviour
                 if (action == actionType.chop) damage = chopDamage;
                 if (action == actionType.mine) damage = mineDamage;
 
-                if (hit.transform.CompareTag("Pond")) hit.transform.GetComponent<Pond>().Cast();
+                if (hit.transform.CompareTag("Pond")) { hit.transform.GetComponent<Pond>().Cast(); currentPond = hit.transform.GetComponent<Pond>(); }
+                else if (hit.transform.CompareTag("Animal")) hit.transform.GetComponent<Animal>().TakeHit(this.gameObject);
                 else hit.transform.SendMessage("DoHit", damage);
             }
 
