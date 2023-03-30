@@ -222,12 +222,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAnimal: 1
   animalType: 2
-  animalSpawnSys: {fileID: 0}
   itemDrop: {fileID: 8770103833075573297, guid: 25c4831dd88354cbca4e1788dad5f0ba, type: 3}
   tool: {fileID: 1924795285, guid: 24919d93a255243899dfb06b1e5d9aff, type: 3}
   itemsDropChance: 1
   itemsOnHit: 0
-  itemsOnDestroy: 3
+  itemsOnDestroy: 1
   health: 2
   Wobble:
     serializedVersion: 2
