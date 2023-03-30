@@ -9045,7 +9045,7 @@ GameObject:
   - component: {fileID: 1059081412}
   m_Layer: 0
   m_Name: Spawner System
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9093,6 +9093,8 @@ MonoBehaviour:
   - {fileID: 1025156454}
   maxWolfCount: 1
   maxBunnyCount: 5
+  currentWolfCount: 0
+  currentBunnyCount: 0
 --- !u!1001 &1082372149
 PrefabInstance:
   m_ObjectHideFlags: 0

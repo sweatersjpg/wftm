@@ -220,6 +220,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c29dc5abbb8c43c7b1bd805c48fd3c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAnimal: 1
+  animalType: 2
+  animalSpawnSys: {fileID: 0}
   itemDrop: {fileID: 8770103833075573297, guid: 25c4831dd88354cbca4e1788dad5f0ba, type: 3}
   tool: {fileID: 1924795285, guid: 24919d93a255243899dfb06b1e5d9aff, type: 3}
   itemsDropChance: 1

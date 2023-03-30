@@ -5,6 +5,12 @@ using UnityEngine;
 public class Breakable : MonoBehaviour
 {
     [SerializeField]
+    private bool isAnimal;
+
+    [SerializeField]
+    private int animalType; // 1: wolf 2: bunny
+
+    [SerializeField]
     public GameObject itemDrop;
 
     public Sprite tool;
@@ -74,7 +80,20 @@ public class Breakable : MonoBehaviour
                 enabled = false;
                 gameObject.layer = LayerMask.GetMask("Default");
                 gameObject.SendMessage("FinalSFX", true);
-            } else Destroy(gameObject);
+            }
+            else
+            {
+                if(isAnimal)
+                {
+                    AnimalSpawnSys animalSpawnSys = GameObject.FindGameObjectWithTag("Spawner").GetComponent<AnimalSpawnSys>();
+
+                    if (animalType == 1)
+                        animalSpawnSys.currentWolfCount--;
+                    else if (animalType == 2)
+                        animalSpawnSys.currentBunnyCount--;
+                }
+                Destroy(gameObject);
+            }
         }
     }
 
