@@ -30,8 +30,6 @@ public class Wolf : MonoBehaviour
         }
 
         wState = WolfStates.idle;
-      
-       
     }
 
     private void Update()
@@ -43,13 +41,10 @@ public class Wolf : MonoBehaviour
         {
             RandomizeState();
         }
-
-     
     }
 
     private void RandomizeState()
     {
-
         int rnd = Random.Range(0, 2);
         if (rnd == 0) wState = WolfStates.idle;
         else wState = WolfStates.wander;

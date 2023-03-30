@@ -17,6 +17,7 @@ public class Bunny : MonoBehaviour
     Transform floorSprite;
     private float stateTimer = 0f;
 
+    bool flee;
 
     private void Start()
     {
@@ -72,6 +73,17 @@ public class Bunny : MonoBehaviour
 
     private void StateManage()
     {
+        if (animalControl.GetPredator() && !flee)
+        {
+            bState = BunStates.flee;
+            flee = true;
+        }
+        else if (!animalControl.GetPredator() && flee)
+        {
+            RandomizeState();
+            flee = false;
+        }
+
         switch (bState)
         {
             case BunStates.idle:
@@ -93,11 +105,6 @@ public class Bunny : MonoBehaviour
             case BunStates.flee:
                 animalControl.Flee();
                 break;
-        }
-
-        if (animalControl.GetPredator())
-        {
-            bState = BunStates.flee;
         }
 
         stateTimer += Time.deltaTime;
