@@ -21,16 +21,31 @@ public class AnimalSpawnSys : MonoBehaviour
 
     private void Start()
     {
-        SpawnAnimals();
-    }
-
-    private void Update()
-    {
-        SpawnAnimals();
+        InvokeRepeating("SpawnAnimals", 0f, 5f);
     }
 
     private void SpawnAnimals()
     {
-        
+        if (currentWolfCount < maxWolfCount)
+        {
+            int wolfSpawnIndex = Random.Range(0, wolfSPs.Length);
+            Transform wolfSpawnPoint = wolfSPs[wolfSpawnIndex];
+
+            GameObject newWolf = Instantiate(WolfPrefab, wolfSpawnPoint.position, Quaternion.identity);
+            wolfList.Add(newWolf);
+
+            currentWolfCount++;
+        }
+
+        if (currentBunnyCount < maxBunnyCount)
+        {
+            int bunnySpawnIndex = Random.Range(0, bunnySPs.Length);
+            Transform bunnySpawnPoint = bunnySPs[bunnySpawnIndex];
+
+            GameObject newBunny = Instantiate(BunnyPrefab, bunnySpawnPoint.position, Quaternion.identity);
+            bunnyList.Add(newBunny);
+
+            currentBunnyCount++;
+        }
     }
 }
