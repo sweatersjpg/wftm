@@ -1,26 +1,39 @@
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using TMPro;
 
 public class DayNightSystem : MonoBehaviour
 {
-    private float dayLengthInSeconds = 120f;
-    private float timeOfDayInSeconds = 0f;
+    [SerializeField] TMP_Text dayCounter; // canvas ui text to display
+    int currentDay = 1; // current day
 
-    public Light2D globalLight;
+    public float dayLengthInSeconds = 60; //seconds the day should last for
+    public float nightLengthInSeconds = 30; //seconds the night should last for
+    private float timeOfDayInSeconds = 0f; //current time
 
-    private void Update()
+    public Light2D globalLight; // intensity to 1 when day and intensity to 0 when night, should lerp or be smooth when changing
+
+    void Update()
     {
-       
+        // Update the time of day based on the game's clock.
+        timeOfDayInSeconds += Time.deltaTime;
 
-        timeOfDayInSeconds += Time.deltaTime / dayLengthInSeconds * 86400f; // this is just how many seconds in a real day
-        timeOfDayInSeconds = Mathf.Repeat(timeOfDayInSeconds, 86400f);
-
-        float timeOfDay = timeOfDayInSeconds / 86400f;
-        float angle = timeOfDay * Mathf.PI * 2f;
-        float sine = (Mathf.Sin(angle) + 1f) / 2f;
-
-        globalLight.color = Color.Lerp(Color.black, Color.white, sine);
-        globalLight.intensity = Mathf.Lerp(0f, 1f, sine);
+        // If it's daytime, increase the light's intensity.
+        if (timeOfDayInSeconds <= dayLengthInSeconds)
+        {
+            globalLight.intensity = Mathf.Lerp(0, 1, timeOfDayInSeconds / dayLengthInSeconds);
+        }
+        // If it's nighttime, decrease the light's intensity.
+        else if (timeOfDayInSeconds <= dayLengthInSeconds + nightLengthInSeconds)
+        {
+            globalLight.intensity = Mathf.Lerp(1, 0, (timeOfDayInSeconds - dayLengthInSeconds) / nightLengthInSeconds);
+        }
+        // If the day has ended, start a new day.
+        else
+        {
+            currentDay++;
+            dayCounter.text = "Day " + currentDay.ToString();
+            timeOfDayInSeconds = 0f;
+        }
     }
 }

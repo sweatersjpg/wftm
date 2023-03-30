@@ -14,10 +14,12 @@ public class Wolf : MonoBehaviour
     private float actionTime = 3;
     private float currentTime = 0;
 
-
+    Transform floorSprite;
 
     private void Start()
     {
+        floorSprite = GameObject.FindGameObjectWithTag("Floor").transform;
+
         animalControl = GetComponent<Animal>();
   
 
@@ -78,8 +80,8 @@ public class Wolf : MonoBehaviour
                 break;
             case WolfStates.wander:
 
-                animalControl.Wander();
-                actionTime = Random.Range(0.6f, 1.2f);
+                animalControl.Wander(floorSprite);
+                actionTime = Random.Range(0.5f, 0.75f);
                 currentTime += Time.deltaTime;
                 break;
             case WolfStates.hunt:

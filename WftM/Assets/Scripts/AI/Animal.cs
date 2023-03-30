@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour
 {
-    
+
     [SerializeField] private float speed = 250;
     private float tempSpeed = 0;
     [SerializeField] private float acceleration = 10f;
@@ -24,7 +24,7 @@ public class Animal : MonoBehaviour
     private float time = 4;
     [SerializeField] private float attackRadius = 2;
     [SerializeField] private float attackDmg = 1;
-    
+
 
     private SpriteRenderer sr;
     private bool attacking = false;
@@ -51,7 +51,7 @@ public class Animal : MonoBehaviour
         if (tempSpeed < speed)
         {
             tempSpeed += acceleration * Time.deltaTime;
-            
+
         }
 
         if (moveDir != Vector2.zero && speed > 0 && !attacking)
@@ -75,9 +75,7 @@ public class Animal : MonoBehaviour
         }
 
         GetComponentInChildren<Breakable>().DoHit(1);
-       
     }
-
 
     public void Hunt()
     {
@@ -90,15 +88,22 @@ public class Animal : MonoBehaviour
         Attack();
     }
 
-    public void Wander()
-    { 
+    public void Wander(Transform bounds)
+    {
+        Vector3 center = bounds.position;
+        Vector3 size = bounds.localScale;
+
+        Vector3 minPosition = center - size / 2f;
+        Vector3 maxPosition = center + size / 2f;
+
         if (timeTemp < time)
         {
             timeTemp += Time.deltaTime;
 
             if (moveDir == Vector2.zero)
             {
-                moveDir = new Vector2(Random.Range(-1, 2), Random.Range(-1, 2));
+                Vector2 newDir = new Vector2(Random.Range(minPosition.x, maxPosition.x), Random.Range(minPosition.y, maxPosition.y)) - (Vector2)transform.position;
+                moveDir = newDir.normalized;
             }
         }
         else
@@ -109,9 +114,10 @@ public class Animal : MonoBehaviour
             //make sure we don't get no movement in our wander state
             while (moveDir == Vector2.zero)
             {
-                moveDir = new Vector2(Random.Range(-1, 2), Random.Range(-1, 2));
+                Vector2 newDir = new Vector2(Random.Range(minPosition.x, maxPosition.x), Random.Range(minPosition.y, maxPosition.y)) - (Vector2)transform.position;
+                moveDir = newDir.normalized;
             }
-            
+
         }
     }
 
@@ -146,7 +152,7 @@ public class Animal : MonoBehaviour
                 StartCoroutine(AttackSequence());
             }
         }
-      
+
     }
 
     private IEnumerator AttackSequence()
@@ -157,7 +163,7 @@ public class Animal : MonoBehaviour
 
         yield return new WaitForSeconds(0.65f);
 
-       
+
 
         if (Physics2D.OverlapCircle(transform.position, attackRadius, LayerMask.GetMask("Prey")))
         {
@@ -168,20 +174,20 @@ public class Animal : MonoBehaviour
             Physics2D.OverlapCircle(transform.position, attackRadius, LayerMask.GetMask("Vulnerable")).GetComponent<PlayerController>().healthCount -= attackDmg * 10;
         }
 
-       
+
 
         yield return new WaitForSeconds(0.01f);
 
         anim.SetInteger("index", 1);
 
         if (prey != null) moveDir = transform.position - prey.transform.position;
-        
+
 
 
         yield return new WaitForSeconds(0.8f);
 
         attacking = false;
-        
+
     }
 
     public bool GetPrey()
@@ -214,7 +220,7 @@ public class Animal : MonoBehaviour
                 return false;
             }
 
-           
+
         }
         else
         {
@@ -227,7 +233,7 @@ public class Animal : MonoBehaviour
             return true;
         }
 
-        
+
     }
 
     public bool GetPredator()
