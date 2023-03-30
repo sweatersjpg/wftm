@@ -674,6 +674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machine
       objectReference: {fileID: 0}
+    - target: {fileID: 7297685148567443293, guid: df0533f77c3b3d34ab3b1fff589a0bd7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7297685148567443294, guid: df0533f77c3b3d34ab3b1fff589a0bd7, type: 3}
       propertyPath: m_RootOrder
       value: 5

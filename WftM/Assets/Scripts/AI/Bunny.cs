@@ -14,10 +14,15 @@ public class Bunny : MonoBehaviour
     private float actionTime = 3;
     private float currentTime = 0;
 
+    Transform floorSprite;
+    private float stateTimer = 0f;
 
+    bool flee;
 
     private void Start()
     {
+        floorSprite = GameObject.FindGameObjectWithTag("Floor").transform;
+
         animalControl = GetComponent<Animal>();
 
 
@@ -47,7 +52,6 @@ public class Bunny : MonoBehaviour
 
     private void RandomizeState()
     {
-
         int rnd = Random.Range(0, 2);
         if (rnd == 0) bState = BunStates.idle;
         else bState = BunStates.wander;
@@ -69,35 +73,41 @@ public class Bunny : MonoBehaviour
 
     private void StateManage()
     {
+        if (animalControl.GetPredator() && !flee)
+        {
+            bState = BunStates.flee;
+            flee = true;
+        }
+        else if (!animalControl.GetPredator() && flee)
+        {
+            RandomizeState();
+            flee = false;
+        }
+
         switch (bState)
         {
             case BunStates.idle:
                 animalControl.Idle();
-                actionTime = Random.Range(1f, 3f);
-                currentTime += Time.deltaTime;
+                if (stateTimer >= actionTime)
+                {
+                    RandomizeState();
+                    stateTimer = 0f;
+                }
                 break;
             case BunStates.wander:
-
-                animalControl.Wander();
-                actionTime = Random.Range(0.6f, 1.2f);
-                currentTime += Time.deltaTime;
+                animalControl.Wander(floorSprite);
+                if (stateTimer >= actionTime)
+                {
+                    RandomizeState();
+                    stateTimer = 0f;
+                }
                 break;
             case BunStates.flee:
                 animalControl.Flee();
                 break;
         }
 
-        if (animalControl.GetPredator())
-        {
-            bState = BunStates.flee;
-        }
-        else RandomizeState();
-
-
-    
+        stateTimer += Time.deltaTime;
     }
-
-
-
 
 }
