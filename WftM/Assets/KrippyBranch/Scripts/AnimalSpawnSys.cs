@@ -21,7 +21,7 @@ public class AnimalSpawnSys : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("SpawnAnimals", 0f, 5f);
+        InvokeRepeating("SpawnAnimals", 0f, 15f);
     }
 
     private void SpawnAnimals()
