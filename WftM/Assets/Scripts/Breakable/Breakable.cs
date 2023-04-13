@@ -48,27 +48,14 @@ public class Breakable : MonoBehaviour
         transform.localScale = Vector3.LerpUnclamped(new Vector3(1, 0, 1), new Vector3(1, 1, 1), Wobble.Evaluate((Time.time-WobbleStart)/WobbleDuration));
     }
 
-    // -- stright up does not work >:(
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    Debug.Log(collision.gameObject.name);
-
-    //    if (collision.transform.CompareTag("ChopZone"))
-    //    {
-    //        DoHit();
-    //    }
-    //}
-
     public void DoHit(float damage)
     {
         WobbleStart = Time.time;
 
         if (breakable) health -= damage;
 
-
         float chance = (damage * itemsDropChance) / Mathf.Ceil(damage);
-        DropItems((int)Mathf.Ceil(damage), chance);
+        DropItems((int)Mathf.Ceil(damage) * itemsOnHit, chance);
         if (hasSFX) gameObject.SendMessage("PlaySFX");
 
         if (health < 0)

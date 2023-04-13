@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/KrippyBranch/Scenes/Main Menu.unity
-    guid: 7a8f3169ce0865f4586254715a1f13ed
+    path: Assets/Scenes/Playtesting 3/Main Menu.unity
+    guid: 740c35a93b25d4b7bb0f08ae08789dde
   - enabled: 1
-    path: Assets/Scenes/Playtest2.unity
-    guid: eb42c2ec694434eb3a14dae3e26a0248
+    path: Assets/Scenes/Playtesting 3/Playtesting 3.unity
+    guid: 61437d021b16e4d4c948521428a569d8
   m_configObjects: {}

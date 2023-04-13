@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer sr;
     Rigidbody2D rb;
 
+    float speed = 0;
+
     float chopDuration = 0.5f;
     float chopStart = -100;
     bool hasChopped = true;
@@ -207,10 +209,12 @@ public class PlayerController : MonoBehaviour
         if (Time.time - chopStart > chopDuration)
         {
             //float speed = minSpeed + (maxSpeed - minSpeed) * healthCount / 100;
-            float speed = Mathf.Lerp(minSpeed, maxSpeed, movementSpeedOverTime.Evaluate(1-(healthCount / 100)));
-
-            rb.MovePosition(rb.position + (speed * input * Time.fixedDeltaTime) * 50);
+            speed = Mathf.Lerp(minSpeed, maxSpeed, movementSpeedOverTime.Evaluate(1-(healthCount / 100)));
+        } else {
+            speed *= 0.9f;
         }
+
+        rb.MovePosition(rb.position + (speed * input * Time.fixedDeltaTime) * 50);
     }
 
     void DoChop()
