@@ -9734,7 +9734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayCounter: {fileID: 0}
-  dayLengthInSeconds: 60
+  dayLengthInSeconds: 20
   nightLengthInSeconds: 30
   globalLight: {fileID: 1668586761}
 --- !u!1001 &1036135601
