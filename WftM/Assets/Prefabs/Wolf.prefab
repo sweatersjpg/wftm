@@ -73,7 +73,9 @@ GameObject:
   - component: {fileID: 987978718688662755}
   - component: {fileID: 987978718688662752}
   - component: {fileID: 987978718688662753}
-  - component: {fileID: 987978718688662758}
+  - component: {fileID: 6662072874059171048}
+  - component: {fileID: 2928130062887469577}
+  - component: {fileID: -4998386918239353664}
   m_Layer: 7
   m_Name: Wolf
   m_TagString: Animal
@@ -235,7 +237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAnimal: 1
   animalType: 1
-  animalSpawnSys: {fileID: 0}
   itemDrop: {fileID: 8770103833075573297, guid: 25c4831dd88354cbca4e1788dad5f0ba, type: 3}
   tool: {fileID: 1924795285, guid: 24919d93a255243899dfb06b1e5d9aff, type: 3}
   itemsDropChance: 0.8
@@ -269,9 +270,126 @@ MonoBehaviour:
   WobbleDuration: 0.5
   ignoreFlip: 0
   breakable: 1
-  hasSFX: 0
+  hasSFX: 1
   toolType: 0
---- !u!61 &987978718688662758
+--- !u!114 &6662072874059171048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987978718688662776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad13080e19944092b9ca8a3f36b5a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAnimal: 1
+  sfx:
+  - {fileID: 8300000, guid: e845d1e555c6f514fab0288381d7e336, type: 3}
+  - {fileID: 8300000, guid: 6feb4b9b6e5e125478bc928968bac625, type: 3}
+  - {fileID: 8300000, guid: e845d1e555c6f514fab0288381d7e336, type: 3}
+  breakSFX: {fileID: 8300000, guid: 5dba289b85e362b44bccc5db3bf3698d, type: 3}
+  subSystem: {fileID: 0}
+  sfxSubIndexes: 
+  interrupt: 1
+--- !u!82 &2928130062887469577
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987978718688662776}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 743c4c7440f3ffd4f91b02065c553038, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!61 &-4998386918239353664
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,7 +402,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06490886, y: -0.53148925}
+  m_Offset: {x: 0, y: -0.08372408}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -295,7 +413,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27075553, y: 0.24774837}
+  m_Size: {x: 2, y: 1.1627597}
   m_EdgeRadius: 0
 --- !u!1 &8441328625421729201
 GameObject:

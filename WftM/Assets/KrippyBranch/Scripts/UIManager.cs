@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
             Destroy(gameObject);
             return;
@@ -27,9 +27,14 @@ public class UIManager : MonoBehaviour
 
         instance = this;
 
+        // Set the initial volume to maximum
+        PlayerPrefs.SetFloat("MVolume", 1f);
+        PlayerPrefs.SetFloat("SFXVolume", 1f);
+
         SceneManager.sceneLoaded += OnSceneLoaded;
         DontDestroyOnLoad(gameObject);
     }
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.buildIndex == 0)

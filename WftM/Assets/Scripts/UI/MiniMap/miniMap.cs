@@ -20,6 +20,9 @@ public class miniMap : MonoBehaviour
 
     RectTransform rt;
 
+    [SerializeField] AudioSource soundEffects;
+    [SerializeField] AudioClip mapSFX;
+
     bool show = false;
 
     // Start is called before the first frame update
@@ -43,7 +46,11 @@ public class miniMap : MonoBehaviour
             parent.anchoredPosition += (hiddenPosition - parent.anchoredPosition) / 4;
         }
 
-        if (Input.GetKeyDown(KeyCode.M)) show = !show;
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            soundEffects.PlayOneShot(mapSFX);
+            show = !show;
+        }
     }
 
     void GenerateElements()

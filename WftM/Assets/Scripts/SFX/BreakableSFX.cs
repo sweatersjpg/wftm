@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class BreakableSFX : MonoBehaviour
 {
+    public bool isAnimal;
+
     public AudioClip[] sfx;
     public AudioClip breakSFX;
 
@@ -26,7 +28,7 @@ public class BreakableSFX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GameObject.FindGameObjectWithTag("MasterSFX").GetComponent<AudioSource>();
         subtitleText = GameObject.FindGameObjectWithTag("SubText").GetComponent<TextMeshProUGUI>();
 
         sr = GetComponentInChildren<SpriteRenderer>();
@@ -68,10 +70,19 @@ public class BreakableSFX : MonoBehaviour
     {
         if (die) return;
 
-        GetComponent<CircleCollider2D>().enabled = false;
+        if (isAnimal)
+        {
+            audioSource.clip = breakSFX;
+            audioSource.Play();
+            Destroy(gameObject);
+        }
+        else
+        {
+            GetComponent<CircleCollider2D>().enabled = false;
 
-        die = true;
-        audioSource.clip = breakSFX;
-        audioSource.Play();
+            die = true;
+            audioSource.clip = breakSFX;
+            audioSource.Play();
+        }
     }
 }

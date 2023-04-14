@@ -390,7 +390,7 @@ public class PlayerController : MonoBehaviour
         moneyCountText.text = ((int)moneyCountOld) + "$";
 
         healthCountText.text = Mathf.Floor(healthCount) + "%";
-        if (gameOver) healthCountText.text += " (Click anywhere to restart)";
+        if (gameOver) healthCountText.text += " (Click anywhere to retry...)";
 
         LerpColor(rockCountText);
         LerpColor(woodCountText);

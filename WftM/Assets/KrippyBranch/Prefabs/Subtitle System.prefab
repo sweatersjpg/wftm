@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 26c787440f1e8434db59f4773a0e67e7, type: 2}
-  m_sharedMaterial: {fileID: 3955027731719190491, guid: 26c787440f1e8434db59f4773a0e67e7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1d2a9b721d9fff44496e129044a1a45f, type: 2}
+  m_sharedMaterial: {fileID: -1196863530822862868, guid: 1d2a9b721d9fff44496e129044a1a45f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -194,7 +194,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 5
   m_TargetDisplay: 0

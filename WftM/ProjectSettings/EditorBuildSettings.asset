@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Playtesting 3/Main Menu.unity
-    guid: 740c35a93b25d4b7bb0f08ae08789dde
+    path: Assets/KrippyBranch/Scenes/Main Menu Final.unity
+    guid: 2d602eda484ba4c4e93914bcd852ccc2
   - enabled: 1
-    path: Assets/KrippyBranch/Scenes/Final_1.unity
-    guid: 8bd2e61345a637247be5fcdf5ab692d8
+    path: Assets/KrippyBranch/Scenes/Cinematic.unity
+    guid: f4df758b096888344aba76afc3192280
+  - enabled: 1
+    path: Assets/KrippyBranch/Scenes/Main Game.unity
+    guid: 3011f26942daf8a429b15ff7f463a3df
   m_configObjects: {}
